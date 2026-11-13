@@ -1,166 +1,178 @@
-    body {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-        background-color: var(--bg-color);
-        color: var(--text-main);
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        min-height: 100vh;
-        line-height: 1.6;
-    }
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dobre Styki - Serwis Elektroniki</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --text-main: #c9d1d9;
+            --accent: #58a6ff;
+            --accent-hover: #1f6feb;
+            --border-color: #30363d;
+        }
 
-    .container {
-        max-width: 700px;
-        width: 90%;
-        background: var(--card-bg);
-        padding: 40px;
-        border-radius: 12px;
-        border: 1px solid var(--border-color);
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-        margin: 40px 0;
-    }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
 
-    h1 {
-        color: #ffffff;
-        font-size: 2.8rem;
-        margin-bottom: 5px;
-        text-align: center;
-        letter-spacing: 1px;
-    }
-
-    h1 span {
-        color: var(--accent);
-    }
-
-    .subtitle {
-        font-size: 1.2rem;
-        color: #8b949e;
-        margin-top: 0;
-        margin-bottom: 35px;
-        text-align: center;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-    }
-
-    .description {
-        font-size: 1.05rem;
-        margin-bottom: 35px;
-        color: var(--text-main);
-    }
-
-    .description p {
-        margin-bottom: 15px;
-    }
-
-    .contact-box {
-        background: rgba(88, 166, 255, 0.1);
-        border-left: 4px solid var(--accent);
-        padding: 20px;
-        border-radius: 4px 8px 8px 4px;
-        margin-bottom: 35px;
-    }
-
-    .contact-box h3 {
-        margin-top: 0;
-        margin-bottom: 10px;
-        color: #ffffff;
-    }
-
-    .contact-box p {
-        margin: 0;
-        font-size: 0.95rem;
-    }
-
-    .action-center {
-        text-align: center;
-    }
-
-    .btn {
-        display: inline-flex;
-        align-items: center;
-        background-color: var(--accent);
-        color: #ffffff;
-        text-decoration: none;
-        padding: 14px 28px;
-        border-radius: 6px;
-        font-weight: 600;
-        font-size: 1.1rem;
-        transition: background 0.3s ease;
-    }
-
-    .btn:hover {
-        background-color: var(--accent-hover);
-    }
-
-    footer {
-        margin-top: auto;
-        padding-bottom: 20px;
-        font-size: 0.85rem;
-        color: #484f58;
-        text-align: center;
-        width: 100%;
-    }
-
-    .legal-links {
-        margin-bottom: 8px;
-    }
-
-    .legal-links a {
-        color: var(--text-main);
-        text-decoration: none;
-        margin: 0 10px;
-        transition: color 0.2s ease;
-    }
-
-    .legal-links a:hover {
-        color: var(--accent);
-        text-decoration: underline;
-    }
-
-    @media (max-width: 600px) {
         .container {
-            padding: 25px;
+            max-width: 700px;
+            width: 90%;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            margin: 40px 0;
         }
+
         h1 {
-            font-size: 2.2rem;
+            color: #ffffff;
+            font-size: 2.8rem;
+            margin-bottom: 5px;
+            text-align: center;
+            letter-spacing: 1px;
         }
+
+        h1 span {
+            color: var(--accent);
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #8b949e;
+            margin-top: 0;
+            margin-bottom: 35px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .description {
+            font-size: 1.05rem;
+            margin-bottom: 35px;
+            color: var(--text-main);
+        }
+
+        .description p {
+            margin-bottom: 15px;
+        }
+
+        .contact-box {
+            background: rgba(88, 166, 255, 0.1);
+            border-left: 4px solid var(--accent);
+            padding: 20px;
+            border-radius: 4px 8px 8px 4px;
+            margin-bottom: 35px;
+        }
+
+        .contact-box h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        .contact-box p {
+            margin: 0;
+            font-size: 0.95rem;
+        }
+
+        .action-center {
+            text-align: center;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            background-color: var(--accent);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 14px 28px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--accent-hover);
+        }
+
+        footer {
+            margin-top: auto;
+            padding-bottom: 20px;
+            font-size: 0.85rem;
+            color: #484f58;
+            text-align: center;
+        }
+
+        .legal-links {
+            margin-bottom: 10px;
+        }
+
         .legal-links a {
-            display: block;
-            margin: 5px 0;
+            color: var(--accent);
+            text-decoration: none;
+            margin: 0 10px;
         }
-    }
-</style>
 
+        .legal-links a:hover {
+            text-decoration: underline;
+        }
 
-<div class="container">
-    <h1>Dobre <span>Styki</span></h1>
-    <p class="subtitle">Laboratorium i Serwis Elektroniki</p>
+        @media (max-width: 600px) {
+            .container {
+                padding: 25px;
+            }
+            h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
 
-    <div class="description">
-        <p>Zajmujemy się zaawansowaną diagnostyką i naprawą elektroniki na poziomie komponentów. Nie wymieniamy całych modułów w ciemno – szukamy faktycznej przyczyny usterki, od uszkodzonych ścieżek, przez pasywne elementy SMD, aż po skomplikowane układy scalone.</p>
-        <p>Niezależnie od tego, czy masz problem ze sprzętem audio, zasilaczem, czy układem sterującym – przywrócimy mu odpowiednie parametry i... dobre styki.</p>
+    <div class="container">
+        <h1>Dobre <span>Styki</span></h1>
+        <p class="subtitle">Laboratorium i Serwis Elektroniki</p>
+
+        <div class="description">
+            <p>Zajmujemy się zaawansowaną diagnostyką i naprawą elektroniki na poziomie komponentów. Nie wymieniamy całych modułów w ciemno – szukamy faktycznej przyczyny usterki, od uszkodzonych ścieżek, przez pasywne elementy SMD, aż po skomplikowane układy scalone.</p>
+            <p>Niezależnie od tego, czy masz problem ze sprzętem audio, zasilaczem, czy układem sterującym – przywrócimy mu odpowiednie parametry i... dobre styki.</p>
+        </div>
+
+        <div class="contact-box">
+            <h3>Jak zlecić diagnozę?</h3>
+            <p>Opisz krótko objawy usterki i prześlij nam zapytanie wraz z dokładną dokumentacją fotograficzną (wyraźne zdjęcia uszkodzonej płyty, podejrzanych elementów, złączy lub spalonych ścieżek). To znacząco przyspieszy wstępną weryfikację możliwości naprawy.</p>
+        </div>
+
+        <div class="action-center">
+            <a href="mailto:dobrestyki@proton.me?subject=Zapytanie%20serwisowe%20-%20[Wpisz%20model%20sprzętu]" class="btn">
+                Napisz na: dobrestyki@proton.me
+            </a>
+        </div>
     </div>
 
-    <div class="contact-box">
-        <h3>Jak zlecić diagnozę?</h3>
-        <p>Opisz krótko objawy usterki i prześlij nam zapytanie wraz z dokładną dokumentacją fotograficzną (wyraźne zdjęcia uszkodzonej płyty, podejrzanych elementów, złączy lub spalonych ścieżek). To znacząco przyspieszy wstępną weryfikację możliwości naprawy.</p>
-    </div>
+    <footer>
+        <div class="legal-links">
+            <a href="regulamin.pdf" target="_blank">Regulamin Serwisu</a> |
+            <a href="polityka_prywatnosci.pdf" target="_blank">Polityka Prywatności</a>
+        </div>
+        <div>&copy; 2026 Dobre Styki. Wszelkie prawa zastrzeżone.</div>
+    </footer>
 
-    <div class="action-center">
-        <a href="mailto:dobrestyki@proton.me?subject=Zapytanie%20serwisowe%20-%20[Wpisz%20model%20sprzętu]" class="btn">
-            Napisz na: dobrestyki@proton.me
-        </a>
-    </div>
-</div>
-
-<footer>
-    <div class="legal-links">
-        <a href="regulamin.pdf" target="_blank">Regulamin Serwisu</a>
-        <a href="polityka_prywatnosci.pdf" target="_blank">Polityka Prywatności</a>
-    </div>
-    &copy; 2026 Dobre Styki. Wszelkie prawa zastrzeżone.
-</footer>
-
+</body>
+</html>
